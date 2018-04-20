@@ -21,6 +21,12 @@ or install Docker Compose (if needed but recommended):
 curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-To start 3proxy service with Docker Compose just run ```docker-compose up -d --build``` in project root.
+To start 3proxy service with Docker Compose just run ```docker-compose up -d --build``` in project root:
+```
+git clone https://github.com/revoldver/3proxy-docker.git
+cd 3proxy-docker
+nano .proxyauth
+docker-compose up -d --build
+```
 
 You can always use ```docker ps``` command to check status of 3proxy container.
