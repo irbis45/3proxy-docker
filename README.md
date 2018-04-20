@@ -16,7 +16,7 @@ Use native ```docker build``` and ```docker run``` commands to start container:
 docker build -t 3proxy-docker . 
 docker run -d -p 8080:8080 -p 3128:3128 --restart=always --privileged=true --name 3proxy 3proxy-docker
 ```
-or install Docker Compose (if needed but recommended):
+or install Docker Compose (if needed but recommended, the latest Docker Compose release can be found here: https://github.com/docker/compose/releases):
 ```
 curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
