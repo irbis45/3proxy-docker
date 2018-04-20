@@ -17,7 +17,8 @@ RUN apt-get -q update &&\
     rm -rf /var/lib/apt/lists/* /tmp/*
 
 # Add config file
-# ADD 3proxy.cfg /etc/3proxy/3proxy.cfg
+ADD ./3proxy.cfg /etc/3proxy/3proxy.cfg
+ADD ./.proxyauth /etc/3proxy/.proxyauth
 
 # Ports
 EXPOSE 8080 3128
