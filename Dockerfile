@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV PROXY_VER=0.8.11
+ENV PROXY_VER=0.8.13
 
 RUN apt-get -q update &&\
     DEBIAN_FRONTEND=noninteractive && \
